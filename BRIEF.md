@@ -121,7 +121,7 @@ Teach the user to:
 - For everyone: kids, teens, adults
 - Starter templates preview
 - CTA: "Start Learning" → links to GitHub repo
-- Footer: "A Clawnagers project" → links to clawnagers.com
+- Footer: community attribution
 - Built with: simple HTML/CSS/JS, no framework, deployable to GitHub Pages
 - Color scheme: dark theme with claw-orange (#FF6B35) accent
 

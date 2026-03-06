@@ -101,6 +101,6 @@ MIT — do whatever you want with it. See [LICENSE](LICENSE).
 
 ## 🦞 About
 
-Clawlege is a [Clawnagers](https://clawnagers.com) project, built to make AI agent development accessible to everyone.
+Clawlege is built to make AI agent development accessible to everyone.
 
 Built with [OpenClaw](https://openclaw.ai) — the open source AI agent framework.
