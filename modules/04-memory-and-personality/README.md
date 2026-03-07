@@ -1,4 +1,4 @@
-# Module 3: Memory & Personality
+# Module 4: Memory & Personality
 
 **⏱ Time: ~45 minutes | 🟢 Difficulty: Beginner | 💻 Coding: None**
 

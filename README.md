@@ -44,14 +44,15 @@ That's it. You're ready to build your first AI agent.
 |--------|-------------------|------|------------|
 | [01 — Meet Your Agent](modules/01-meet-your-agent/) | Your first AI agent with a personality | ~30 min | 🟢 Beginner |
 | [02 — Give It Skills](modules/02-give-it-skills/) | An agent that searches, calculates, and fetches | ~30 min | 🟢 Beginner |
-| [03 — Memory & Personality](modules/03-memory-and-personality/) | An agent that remembers you | ~45 min | 🟢 Beginner |
-| [04 — Connect to the World](modules/04-connect-to-the-world/) | Messages, emails, and real-time data | ~60 min | 🟡 Intermediate |
-| [05 — Build Something Unique](modules/05-build-something-unique/) | Your own custom agent project | ~90 min | 🟡 Intermediate |
-| [06 — Hardware Week](modules/06-hardware-week/) | Agents on phones, Raspberry Pi, and more | ~60 min | 🟡 Intermediate |
-| [07 — Polish & Ship](modules/07-polish-and-ship/) | A production-ready agent you can share | ~60 min | 🔴 Advanced |
-| [08 — Demo Day](modules/08-demo-day/) | Present your creation to the world | ~30 min | 🔴 Advanced |
+| [03 — Securing Your Agent](modules/03-securing-your-agent/) | API keys, prompt injection, permissions & privacy | ~60 min | 🟢 Beginner |
+| [04 — Memory & Personality](modules/04-memory-and-personality/) | An agent that remembers you | ~45 min | 🟢 Beginner |
+| [05 — Connect to the World](modules/05-connect-to-the-world/) | Messages, emails, and real-time data | ~60 min | 🟡 Intermediate |
+| [06 — Build Something Unique](modules/06-build-something-unique/) | Your own custom agent project | ~90 min | 🟡 Intermediate |
+| [07 — Hardware Week](modules/07-hardware-week/) | Agents on phones, Raspberry Pi, and more | ~60 min | 🟡 Intermediate |
+| [08 — Polish & Ship](modules/08-polish-and-ship/) | A production-ready agent you can share | ~60 min | 🔴 Advanced |
+| [09 — Demo Day](modules/09-demo-day/) | Present your creation to the world | ~30 min | 🔴 Advanced |
 
-**Modules 1-3 require zero coding.** You'll write plain English files that tell your agent who it is and how to behave. Seriously — that's all it takes.
+**Modules 1-4 require zero coding.** You'll write plain English files that tell your agent who it is and how to behave. Seriously — that's all it takes.
 
 ---
 

@@ -166,6 +166,8 @@ Your agent went from "fun to talk to" to "actually useful." It can now find info
 
 ## Next Up
 
-In [Module 3: Memory & Personality](../03-memory-and-personality/), you'll teach your agent to *remember* you. Your preferences, your past conversations, things you've told it before. This is where your agent starts to feel less like software and more like... a partner.
+In [Module 3 — Securing Your Agent →](../03-securing-your-agent/)
+
+*Before we build more, let.s make sure we build safe.* & Personality](../03-memory-and-personality/), you'll teach your agent to *remember* you. Your preferences, your past conversations, things you've told it before. This is where your agent starts to feel less like software and more like... a partner.
 
 → [Continue to Module 3](../03-memory-and-personality/)
