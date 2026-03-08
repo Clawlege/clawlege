@@ -316,6 +316,17 @@ a:hover {
     padding: 24px;
     text-align: center;
     transition: border-color 0.2s, transform 0.2s;
+    color: var(--text);
+    display: block;
+}
+
+a.template-card {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a.template-card:hover {
+    color: var(--text);
 }
 
 .template-card:hover {
