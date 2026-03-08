@@ -350,6 +350,54 @@ a.template-card:hover {
     line-height: 1.4;
 }
 
+/* ===== FAQ ===== */
+.faq-grid {
+    max-width: 720px;
+    margin: 32px auto 0;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+}
+
+.faq-item summary {
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item summary::after {
+    content: "+";
+    font-size: 1.3rem;
+    color: var(--orange);
+    transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item p {
+    margin-top: 12px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.faq-item a {
+    color: var(--orange);
+}
+
 /* ===== CTA Section ===== */
 .cta-section {
     text-align: center;

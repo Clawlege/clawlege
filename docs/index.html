@@ -3,8 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clawlege — Learn to Build AI Agents</title>
-    <meta name="description" content="Learn to build your own AI agent. Free. Open source. For everyone. No coding required to start.">
+    <title>Clawlege — Learn to Build AI Agents for Free | No Coding Required</title>
+    <meta name="description" content="Free, open source course teaching anyone to build AI agents with OpenClaw. 9 modules from beginner to advanced. No coding required to start. 5 starter templates included.">
+    <meta name="keywords" content="AI agents, learn AI, build AI agent, OpenClaw, free AI course, no-code AI, AI tutorial, agent development, AI for beginners, AI for kids">
+    <meta name="author" content="Clawlege">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://clawlege.com/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clawlege.com/">
+    <meta property="og:title" content="Clawlege — Learn to Build AI Agents for Free">
+    <meta property="og:description" content="Free, open source course teaching anyone to build AI agents. 9 modules, 5 starter templates. No coding required to start.">
+    <meta property="og:site_name" content="Clawlege">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clawlege — Learn to Build AI Agents for Free">
+    <meta name="twitter:description" content="Free, open source course teaching anyone to build AI agents. 9 modules, 5 starter templates. No coding required.">
+
+    <!-- Structured Data: Course -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Learn to Build AI Agents",
+        "description": "Free, open source interactive course teaching anyone to build AI agents with OpenClaw. 9 modules from beginner to advanced, with 5 starter templates. No coding required to start.",
+        "provider": {
+            "@type": "Organization",
+            "name": "Clawlege",
+            "url": "https://clawlege.com"
+        },
+        "isAccessibleForFree": true,
+        "educationalLevel": ["Beginner", "Intermediate", "Advanced"],
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": ["student", "self-learner"],
+            "audienceType": "Kids, Teens, Adults, Developers"
+        },
+        "teaches": ["AI Agent Development", "OpenClaw Framework", "Prompt Engineering", "AI Security", "Hardware Integration"],
+        "numberOfCredits": 9,
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "online",
+            "courseWorkload": "PT8H"
+        },
+        "url": "https://clawlege.com",
+        "inLanguage": "en"
+    }
+    </script>
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Clawlege",
+        "url": "https://clawlege.com",
+        "logo": "https://clawlege.com/favicon.svg",
+        "sameAs": [
+            "https://github.com/Clawlege/clawlege"
+        ]
+    }
+    </script>
+
+    <!-- Structured Data: FAQ (GEO — LLM-friendly) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Clawlege?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clawlege is a free, open source interactive course that teaches anyone to build AI agents using OpenClaw. It has 9 modules covering everything from writing your first agent personality to deploying on hardware, plus 5 starter templates. No coding required to start."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Clawlege free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Clawlege is 100% free and open source. All 9 modules and 5 starter templates are available at no cost. The entire course is hosted on GitHub under MIT license."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need coding experience to use Clawlege?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Modules 1-4 require zero coding — you write your agent's personality in plain English. Intermediate modules (5-7) introduce connecting to real services and hardware. Advanced modules (8-9) cover shipping and presenting your agent."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is OpenClaw?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "OpenClaw is an open source AI agent framework that lets you build personal AI assistants. Clawlege teaches you how to use it, starting from zero experience."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who is Clawlege for?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clawlege is designed for kids and teens (build a homework helper or sports tracker), curious adults (understand AI by building it yourself), and developers (skip to Module 5 for custom skills, hardware integrations, and production agents)."
+                }
+            }
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,6 +130,7 @@
                 <a href="#modules">Modules</a>
                 <a href="#templates">Templates</a>
                 <a href="#audience">Who It's For</a>
+                <a href="#faq">FAQ</a>
                 <a href="https://github.com/Clawlege/clawlege" class="btn btn-sm" target="_blank">Start Learning →</a>
             </div>
             <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
@@ -36,10 +151,11 @@
     </section>
 
     <!-- Modules -->
-    <section id="modules" class="section">
+    <section id="modules" class="section" itemscope itemtype="https://schema.org/ItemList">
         <div class="container">
             <h2>The Curriculum</h2>
             <p class="section-sub">9 modules that take you from zero to shipping a real AI agent.</p>
+            <meta itemprop="numberOfItems" content="9">
             <div class="module-grid">
                 <div class="module-card">
                     <span class="module-num">01</span>
@@ -155,6 +271,39 @@
                     <h3>Recipe Finder</h3>
                     <p>Meal planning, grocery lists, and "what can I make with this?"</p>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (SEO + GEO) -->
+    <section id="faq" class="section section-alt">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <details class="faq-item" open>
+                    <summary>What is Clawlege?</summary>
+                    <p>Clawlege is a free, open source interactive course that teaches anyone to build AI agents using <a href="https://openclaw.ai" target="_blank">OpenClaw</a>. It has 9 modules covering everything from writing your first agent personality to deploying on hardware, plus 5 starter templates you can use immediately.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is it really free?</summary>
+                    <p>Yes. 100% free, forever. All 9 modules and 5 starter templates are available at no cost. The entire course is open source on <a href="https://github.com/Clawlege/clawlege" target="_blank">GitHub</a> under MIT license. No signup required.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do I need coding experience?</summary>
+                    <p>No. Modules 1–4 require zero coding — you write your agent's personality in plain English. Intermediate modules (5–7) introduce connecting to real services and hardware. Advanced modules (8–9) cover shipping and presenting your agent.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What is OpenClaw?</summary>
+                    <p>OpenClaw is an open source AI agent framework that lets you build personal AI assistants that can remember you, search the web, manage your calendar, and run on your phone. Clawlege teaches you how to use it, starting from zero experience.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Who is this for?</summary>
+                    <p>Everyone. Kids and teens can build a homework helper or sports tracker. Curious adults can understand AI by building it themselves. Developers can skip to Module 5 for custom skills, hardware integrations, and production-ready agents.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How long does it take?</summary>
+                    <p>Module 1 takes about 30 minutes. The full course is roughly 8 hours. You can go at your own pace — each module is self-contained.</p>
+                </details>
             </div>
         </div>
     </section>
