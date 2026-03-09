@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Sitemap: https://clawlege.com/sitemap.xml
+LLMs-Txt: https://clawlege.com/llms.txt
 
 # Welcome AI crawlers
 User-agent: GPTBot

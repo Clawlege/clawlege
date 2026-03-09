@@ -1,0 +1,50 @@
+# Clawlege
+
+> Free, open source interactive course teaching anyone to build AI agents with OpenClaw.
+
+Clawlege is a completely free educational platform that teaches kids, teens, and adults how to build personal AI agents using the OpenClaw framework. No coding required to start.
+
+## Course Structure
+
+9 modules from beginner to advanced:
+
+### Beginner (No Coding Required)
+- Module 1: Meet Your Agent — Write your first agent personality in plain English using SOUL.md
+- Module 2: Teaching Your Agent — Configure behavior with AGENTS.md, set up memory and preferences
+- Module 3: Securing Your Agent — API key protection, prompt injection defense, permission boundaries, data privacy
+- Module 4: Making It Yours — Advanced customization, voice, personality refinement
+
+### Intermediate
+- Module 5: Real-World Skills — Connect to web search, email, calendar, and other services
+- Module 6: Build Something Unique — Design custom skills, solve real problems
+- Module 7: Hardware & Senses — Voice assistants, cameras, wearables, IoT integration
+
+### Advanced
+- Module 8: Ship It — Package, share, deploy your agent for others
+- Module 9: Demo Day — Present your work, build a portfolio, contribute to open source
+
+## Starter Templates
+
+5 ready-to-use OpenClaw agent workspaces:
+- Personal Assistant (Atlas) — Daily briefings, reminders, calendar management
+- Homework Helper (Sage) — Patient tutor that guides to answers, not gives them
+- Sports Tracker — Live scores, standings, player stats
+- Weather Buddy — Forecasts with outfit suggestions and activity recommendations
+- Recipe Finder (Basil) — Meal planning, grocery lists, ingredient-based cooking
+
+## Key Facts
+
+- 100% free, no signup required
+- Open source under MIT license
+- Built on OpenClaw (openclaw.ai)
+- GitHub: github.com/Clawlege/clawlege
+- All modules and templates available at no cost
+- First 3 modules require zero coding experience
+- Full course takes approximately 8 hours
+
+## Links
+
+- Website: https://clawlege.com
+- GitHub Repository: https://github.com/Clawlege/clawlege
+- OpenClaw Framework: https://openclaw.ai
+- OpenClaw Documentation: https://docs.openclaw.ai

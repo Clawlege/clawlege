@@ -1,0 +1,116 @@
+# Clawlege — Complete Course Documentation
+
+> Free, open source interactive course teaching anyone to build AI agents with OpenClaw.
+
+## About
+
+Clawlege is a completely free educational platform that teaches kids, teens, and adults how to build personal AI agents using the OpenClaw framework. The course is 100% open source (MIT license), requires no signup, and the first three modules need zero coding experience.
+
+The name "Clawlege" combines "Claw" (from OpenClaw) with "knowledge" — learn the claw.
+
+## Who This Is For
+
+### Kids & Teens (Ages 10+)
+Build a homework helper that explains things your way, a sports tracker for your teams, or a weather buddy that tells you what to wear. No coding needed — you teach your agent by writing to it in plain English.
+
+### Curious Adults
+Understand AI by building it yourself. Not theory, not hype — hands-on creation. Module 1 takes 30 minutes. By Module 3, your agent has a personality, knows your preferences, and follows your rules.
+
+### Developers
+Skip to Module 5. Build custom skills, integrate hardware, deploy production agents. Contribute to the OpenClaw ecosystem.
+
+## Course Modules
+
+### Module 1: Meet Your Agent
+- What an AI agent actually is (not magic, not a chatbot)
+- Your first SOUL.md — giving your agent a personality
+- The three core files: SOUL.md, AGENTS.md, USER.md
+- Running your agent for the first time
+- Duration: ~30 minutes
+
+### Module 2: Teaching Your Agent
+- Writing AGENTS.md — your agent's operating manual
+- Setting up USER.md — teaching your agent about you
+- Memory and preferences
+- Conversation style and boundaries
+- Duration: ~45 minutes
+
+### Module 3: Securing Your Agent
+- API key protection and environment variables
+- Prompt injection: what it is and how to defend against it
+- Permission boundaries — what your agent can and cannot do
+- Data privacy and what your agent should never share
+- Real-world security failure case studies
+- Security checklist for production agents
+- Duration: ~1 hour
+
+### Module 4: Making It Yours
+- Advanced personality customization
+- Voice and tone refinement
+- Multi-context behavior (different personas for different situations)
+- Duration: ~45 minutes
+
+### Module 5: Real-World Skills
+- Connecting to web search, email, calendar
+- Working with APIs and external services
+- Building skill files (SKILL.md)
+- Duration: ~1.5 hours
+
+### Module 6: Build Something Unique
+- Designing custom skills from scratch
+- Problem-solving with agents
+- The Anthropic skill-building framework
+- Duration: ~1.5 hours
+
+### Module 7: Hardware & Senses
+- Voice assistants (ESP32, Echo, Jetson)
+- Camera integration
+- Wearable devices and IoT
+- Giving your agent ears, eyes, and voice
+- Duration: ~1 hour
+
+### Module 8: Ship It
+- Packaging your agent for distribution
+- Sharing on GitHub
+- Community contribution
+- Duration: ~45 minutes
+
+### Module 9: Demo Day
+- Presenting your agent
+- Building a portfolio
+- Contributing to open source
+- Duration: ~30 minutes
+
+## Starter Templates
+
+### Personal Assistant (Atlas)
+A daily briefing, reminder, and calendar management agent. Organized, reliable, proactive. Checks your schedule, summarizes important emails, and keeps you on track.
+
+### Homework Helper (Sage)
+A patient tutor that guides students to answers instead of giving them directly. Uses the Socratic method, celebrates effort over results, and adapts to the student's pace.
+
+### Sports Tracker
+Live scores, standings, and player stats for your favorite teams. Knows game schedules, tracks stats, and gives you the highlights.
+
+### Weather Buddy
+Forecasts with outfit suggestions and activity recommendations. Checks weather proactively and suggests what to wear or whether to bring an umbrella.
+
+### Recipe Finder (Basil)
+Meal planning, grocery lists, and "what can I make with what I have?" Knows dietary restrictions, suggests recipes based on available ingredients, and helps plan weekly meals.
+
+## Technology
+
+- Built on OpenClaw (https://openclaw.ai) — open source AI agent framework
+- Agents are configured through plain text files (Markdown)
+- No proprietary tools or vendor lock-in
+- Works with any LLM provider (Anthropic Claude, OpenAI, xAI Grok, Google Gemini)
+- Runs locally on your machine — your data stays yours
+
+## Links
+
+- Website: https://clawlege.com
+- GitHub: https://github.com/Clawlege/clawlege
+- OpenClaw: https://openclaw.ai
+- OpenClaw Docs: https://docs.openclaw.ai
+- OpenClaw Discord: https://discord.com/invite/clawd
+- License: MIT
