@@ -227,6 +227,6 @@ Your agent now has personality (SOUL.md), skills (web search, weather, calculato
 
 ## Next Up
 
-In [Module 4: Connect to the World](../04-connect-to-the-world/), your agent breaks out of the terminal and starts interacting with the real world — messages, emails, calendars, and more. Things are about to get very interesting.
+In [Module 5: Connect to the World](../05-connect-to-the-world/), your agent breaks out of the terminal and starts interacting with the real world — messages, emails, calendars, and more. Things are about to get very interesting.
 
-→ [Continue to Module 4](../04-connect-to-the-world/)
+→ [Continue to Module 5](../05-connect-to-the-world/)
