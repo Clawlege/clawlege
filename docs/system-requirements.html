@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw System Requirements & Setup Guide — Clawlege</title>
+    <meta name="description" content="Complete guide to OpenClaw system requirements, installation, and setup. Learn hardware specs, cloud deployment options, and performance optimization for AI agents.">
+    <meta name="keywords" content="OpenClaw system requirements, AI agent installation, OpenClaw hardware specs, cloud deployment, local AI models, Raspberry Pi AI agent">
+    <link rel="canonical" href="https://clawlege.com/system-requirements">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://clawlege.com/system-requirements">
+    <meta property="og:title" content="OpenClaw System Requirements & Setup Guide">
+    <meta property="og:description" content="Everything you need to know about running OpenClaw AI agents: hardware requirements, cloud options, and performance tips.">
+    <meta property="og:image" content="https://clawlege.com/social-card.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OpenClaw System Requirements & Setup Guide">
+    <meta name="twitter:description" content="Complete guide to OpenClaw hardware requirements and deployment options.">
+    <meta name="twitter:image" content="https://clawlege.com/social-card.png">
+
+    <!-- Structured Data: HowTo -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Set Up OpenClaw AI Agent Framework",
+        "description": "Complete guide to OpenClaw system requirements, installation, and deployment options for AI agents.",
+        "image": "https://clawlege.com/social-card.png",
+        "totalTime": "PT15M",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": "0"
+        },
+        "supply": [
+            "Computer with 4GB+ RAM",
+            "Internet connection", 
+            "AI model API key"
+        ],
+        "tool": [
+            "OpenClaw framework",
+            "Terminal/Command Prompt"
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Check System Requirements",
+                "text": "Verify your computer meets minimum requirements: 4GB RAM, 2GB storage, Windows/Mac/Linux."
+            },
+            {
+                "@type": "HowToStep", 
+                "name": "Download OpenClaw",
+                "text": "Visit openclaw.ai/download and choose your operating system."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Run Installation",
+                "text": "Execute the installer and follow the setup wizard to configure your environment."
+            }
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+        .spec-table th, .spec-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        .spec-table th {
+            background: var(--bg-alt);
+            font-weight: 600;
+            color: var(--text);
+        }
+        .spec-table td {
+            color: var(--text-muted);
+        }
+        .spec-table tr:last-child td {
+            border-bottom: none;
+        }
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+        .comparison-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            position: relative;
+        }
+        .comparison-card.recommended {
+            border-color: var(--orange);
+        }
+        .comparison-card.recommended::before {
+            content: 'RECOMMENDED';
+            position: absolute;
+            top: -1px;
+            right: 16px;
+            background: var(--orange);
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+        }
+        .comparison-card h3 {
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        .comparison-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .comparison-card li {
+            padding: 8px 0;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-card li:last-child {
+            border-bottom: none;
+        }
+        .comparison-card .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--orange);
+            margin-top: 16px;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .content h2 {
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+        .content h3 {
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        .content p {
+            margin-bottom: 20px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .content ul, .content ol {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+        .content li {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .code-block {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+            margin: 20px 0;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.9rem;
+            color: var(--text);
+            overflow-x: auto;
+        }
+        .callout {
+            background: rgba(255, 107, 53, 0.1);
+            border-left: 4px solid var(--orange);
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+        .callout p {
+            margin-bottom: 0;
+        }
+        .warning {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #EF4444;
+        }
+        .success {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid #22C55E;
+        }
+        .nav-sections {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+        .nav-sections h3 {
+            margin-bottom: 12px;
+            color: var(--text);
+            font-size: 1.1rem;
+        }
+        .nav-sections ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+        }
+        .nav-sections a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            padding: 4px 0;
+            display: block;
+        }
+        .nav-sections a:hover {
+            color: var(--orange);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-inner">
+                <a href="/" class="logo" aria-label="Clawlege Home">🦞 Clawlege</a>
+                <div class="nav-links">
+                    <a href="/#modules" aria-label="View Curriculum">Modules</a>
+                    <a href="/#templates" aria-label="View Starter Templates">Templates</a>
+                    <a href="/about" aria-label="About Clawlege">About</a>
+                    <a href="/blog" aria-label="AI Agent Blog">Blog</a>
+                    <a href="https://github.com/Clawlege/clawlege" class="btn btn-sm" target="_blank">Start Learning →</a>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>OpenClaw <span class="accent">System Requirements</span></h1>
+            <p class="hero-sub">Everything you need to run AI agents locally or in the cloud.</p>
+            <p class="hero-desc">From Raspberry Pi to enterprise servers — find the setup that works for you.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <div class="nav-sections">
+                    <h3>Quick Navigation</h3>
+                    <ul>
+                        <li><a href="#quick-start">Quick Start</a></li>
+                        <li><a href="#minimum-requirements">Minimum Requirements</a></li>
+                        <li><a href="#recommended-specs">Recommended Specs</a></li>
+                        <li><a href="#cloud-deployment">Cloud Deployment</a></li>
+                        <li><a href="#local-models">Local AI Models</a></li>
+                        <li><a href="#hardware-projects">Hardware Projects</a></li>
+                        <li><a href="#performance-tips">Performance Tips</a></li>
+                        <li><a href="#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </div>
+
+                <section id="quick-start">
+                    <h2>Quick Start</h2>
+                    <div class="callout success">
+                        <p><strong>Just want to get started?</strong> Any computer from the last 5 years with 4GB RAM can run OpenClaw with cloud AI models (ChatGPT, Claude). Installation takes 5 minutes.</p>
+                    </div>
+
+                    <h3>Essential Requirements</h3>
+                    <ul>
+                        <li><strong>Operating System:</strong> Windows 10+, macOS 10.15+, or Linux (Ubuntu 18.04+)</li>
+                        <li><strong>Memory:</strong> 4GB RAM minimum</li>
+                        <li><strong>Storage:</strong> 2GB free space</li>
+                        <li><strong>Network:</strong> Stable internet connection</li>
+                        <li><strong>AI Access:</strong> API key for OpenAI, Anthropic, or local model</li>
+                    </ul>
+                </section>
+
+                <section id="minimum-requirements">
+                    <h2>Minimum System Requirements</h2>
+                    <p>These are the absolute minimum specs to run OpenClaw with cloud-based AI models:</p>
+
+                    <table class="spec-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Minimum</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>CPU</strong></td>
+                                <td>Dual-core 2.0GHz</td>
+                                <td>Any modern processor works</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RAM</strong></td>
+                                <td>4GB</td>
+                                <td>More needed for local models</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Storage</strong></td>
+                                <td>2GB free space</td>
+                                <td>SSD recommended for responsiveness</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Network</strong></td>
+                                <td>1 Mbps stable</td>
+                                <td>For API calls and updates</td>
+                            </tr>
+                            <tr>
+                                <td><strong>GPU</strong></td>
+                                <td>None required</td>
+                                <td>Only needed for local AI models</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="callout">
+                        <p><strong>Works on older hardware:</strong> OpenClaw runs fine on 2015+ laptops, Raspberry Pi 4, and even some tablets. The AI processing happens in the cloud, so your device just needs to handle the interface.</p>
+                    </div>
+                </section>
+
+                <section id="recommended-specs">
+                    <h2>Recommended Configurations</h2>
+                    <p>Choose the setup that matches your use case:</p>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <h3>🎓 Learning Setup</h3>
+                            <ul>
+                                <li><strong>RAM:</strong> 8GB</li>
+                                <li><strong>CPU:</strong> Quad-core</li>
+                                <li><strong>Storage:</strong> 256GB SSD</li>
+                                <li><strong>AI:</strong> OpenAI/Claude API</li>
+                                <li><strong>Use case:</strong> Modules 1-6</li>
+                            </ul>
+                            <div class="price">$0/month*</div>
+                            <small style="color: var(--text-dim);">*Plus AI API costs (~$5-20/month)</small>
+                        </div>
+
+                        <div class="comparison-card recommended">
+                            <h3>💻 Development Setup</h3>
+                            <ul>
+                                <li><strong>RAM:</strong> 16GB</li>
+                                <li><strong>CPU:</strong> 6+ cores</li>
+                                <li><strong>Storage:</strong> 512GB SSD</li>
+                                <li><strong>AI:</strong> Cloud + Local models</li>
+                                <li><strong>Use case:</strong> Full course + projects</li>
+                            </ul>
+                            <div class="price">$10-30/month</div>
+                            <small style="color: var(--text-dim);">Including AI API and VPS costs</small>
+                        </div>
+
+                        <div class="comparison-card">
+                            <h3>🏭 Production Setup</h3>
+                            <ul>
+                                <li><strong>RAM:</strong> 32GB+</li>
+                                <li><strong>CPU:</strong> 8+ cores</li>
+                                <li><strong>Storage:</strong> 1TB+ NVMe SSD</li>
+                                <li><strong>AI:</strong> Local models + GPU</li>
+                                <li><strong>Use case:</strong> Multi-user agents</li>
+                            </ul>
+                            <div class="price">$50-200/month</div>
+                            <small style="color: var(--text-dim);">Cloud server or dedicated hardware</small>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="cloud-deployment">
+                    <h2>Cloud Deployment Options</h2>
+                    <p>Running OpenClaw in the cloud gives you 24/7 agent availability and better performance for multiple users.</p>
+
+                    <h3>Popular Cloud Providers</h3>
+                    
+                    <h4>DigitalOcean Droplets</h4>
+                    <ul>
+                        <li><strong>Basic:</strong> $12/month (2GB RAM, 1 vCPU) — Good for learning</li>
+                        <li><strong>Standard:</strong> $24/month (4GB RAM, 2 vCPU) — Recommended for most users</li>
+                        <li><strong>Performance:</strong> $48/month (8GB RAM, 4 vCPU) — Multiple agents</li>
+                    </ul>
+
+                    <div class="code-block">
+# Quick DigitalOcean setup (Ubuntu 22.04)
+sudo apt update && sudo apt upgrade -y
+curl -sSL https://install.openclaw.ai | sh
+openclaw setup --cloud --domain yourdomain.com
+                    </div>
+
+                    <h4>AWS EC2</h4>
+                    <ul>
+                        <li><strong>t3.small:</strong> ~$15/month (2GB RAM, 2 vCPU)</li>
+                        <li><strong>t3.medium:</strong> ~$30/month (4GB RAM, 2 vCPU)</li>
+                        <li><strong>t3.large:</strong> ~$60/month (8GB RAM, 2 vCPU)</li>
+                    </ul>
+
+                    <h4>Google Cloud Platform</h4>
+                    <ul>
+                        <li><strong>e2-small:</strong> ~$13/month (2GB RAM, 1 vCPU)</li>
+                        <li><strong>e2-medium:</strong> ~$27/month (4GB RAM, 2 vCPU)</li>
+                        <li><strong>e2-standard-2:</strong> ~$49/month (8GB RAM, 2 vCPU)</li>
+                    </ul>
+
+                    <div class="callout">
+                        <p><strong>Free tier tip:</strong> Most cloud providers offer $200-300 in free credits. You can run a development OpenClaw instance for 3-6 months completely free.</p>
+                    </div>
+
+                    <h3>Docker Deployment</h3>
+                    <p>The easiest way to deploy OpenClaw in the cloud is with Docker:</p>
+
+                    <div class="code-block">
+# Pull the official OpenClaw image
+docker pull openclaw/openclaw:latest
+
+# Run with persistent storage
+docker run -d \
+  --name openclaw \
+  -p 8080:8080 \
+  -v openclaw-data:/data \
+  -e OPENAI_API_KEY=your_key_here \
+  openclaw/openclaw:latest
+
+# Access at http://your-server:8080
+                    </div>
+                </section>
+
+                <section id="local-models">
+                    <h2>Local AI Models</h2>
+                    <p>For privacy, cost savings, or offline operation, you can run AI models locally. This requires significantly more hardware.</p>
+
+                    <h3>Hardware Requirements for Local Models</h3>
+                    <table class="spec-table">
+                        <thead>
+                            <tr>
+                                <th>Model Size</th>
+                                <th>RAM Required</th>
+                                <th>GPU (Optional)</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>7B parameters</strong></td>
+                                <td>8GB+</td>
+                                <td>RTX 3060 (12GB)</td>
+                                <td>Good for basic tasks</td>
+                            </tr>
+                            <tr>
+                                <td><strong>13B parameters</strong></td>
+                                <td>16GB+</td>
+                                <td>RTX 4070 (16GB)</td>
+                                <td>Balanced quality/speed</td>
+                            </tr>
+                            <tr>
+                                <td><strong>70B parameters</strong></td>
+                                <td>64GB+</td>
+                                <td>RTX 4090 (24GB) x2</td>
+                                <td>Excellent reasoning</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Recommended Local Models</h3>
+                    <ul>
+                        <li><strong>Ollama + Llama 3:</strong> Easy setup, good performance</li>
+                        <li><strong>LM Studio:</strong> User-friendly GUI interface</li>
+                        <li><strong>GPT4All:</strong> Runs on CPU, no GPU needed</li>
+                        <li><strong>Jan AI:</strong> ChatGPT-like interface for local models</li>
+                    </ul>
+
+                    <div class="code-block">
+# Install Ollama (macOS/Linux)
+curl -fsSL https://ollama.ai/install.sh | sh
+
+# Download and run Llama 3
+ollama pull llama3
+ollama serve
+
+# Configure OpenClaw to use Ollama
+openclaw config set ai.provider ollama
+openclaw config set ai.model llama3
+                    </div>
+
+                    <div class="callout warning">
+                        <p><strong>Performance note:</strong> Local models are 10-100x slower than cloud APIs. A response that takes 2 seconds with ChatGPT might take 30 seconds locally. Plan accordingly.</p>
+                    </div>
+                </section>
+
+                <section id="hardware-projects">
+                    <h2>Hardware Integration Projects</h2>
+                    <p>OpenClaw can run on various hardware platforms for physical AI agent projects.</p>
+
+                    <h3>Raspberry Pi Setup</h3>
+                    <p><strong>Recommended:</strong> Raspberry Pi 4B with 8GB RAM</p>
+                    <ul>
+                        <li><strong>OS:</strong> Raspberry Pi OS 64-bit</li>
+                        <li><strong>Storage:</strong> 64GB+ microSD (Class 10)</li>
+                        <li><strong>Accessories:</strong> USB microphone, speaker, camera (optional)</li>
+                        <li><strong>Performance:</strong> Good for voice assistants with cloud AI</li>
+                    </ul>
+
+                    <div class="code-block">
+# Raspberry Pi installation
+sudo apt update && sudo apt upgrade -y
+curl -sSL https://install.openclaw.ai/pi | sh
+
+# Enable camera and audio
+sudo raspi-config
+# Interface Options > Camera > Enable
+# Interface Options > SSH > Enable
+                    </div>
+
+                    <h3>NVIDIA Jetson Series</h3>
+                    <p>For edge AI with local model capability:</p>
+                    <ul>
+                        <li><strong>Jetson Orin Nano:</strong> $499, 8GB RAM, GPU for small models</li>
+                        <li><strong>Jetson AGX Orin:</strong> $1999, 64GB RAM, runs 13B models locally</li>
+                        <li><strong>Use cases:</strong> Autonomous robots, smart security, industrial IoT</li>
+                    </ul>
+
+                    <h3>Mobile Deployment</h3>
+                    <p>OpenClaw can run on smartphones and tablets:</p>
+                    <ul>
+                        <li><strong>Android:</strong> Termux app + OpenClaw mobile build</li>
+                        <li><strong>iOS:</strong> iSH Shell app (limited functionality)</li>
+                        <li><strong>Requirements:</strong> 4GB+ RAM, stable internet</li>
+                        <li><strong>Battery:</strong> Expect 4-6 hours with continuous use</li>
+                    </ul>
+                </section>
+
+                <section id="performance-tips">
+                    <h2>Performance Optimization</h2>
+
+                    <h3>Speed Up Response Times</h3>
+                    <ul>
+                        <li><strong>Use SSD storage:</strong> 3-5x faster than traditional hard drives</li>
+                        <li><strong>Close unused applications:</strong> Free up RAM for OpenClaw</li>
+                        <li><strong>Stable internet:</strong> Use ethernet over WiFi when possible</li>
+                        <li><strong>Choose nearby AI servers:</strong> Some providers offer regional endpoints</li>
+                    </ul>
+
+                    <h3>Reduce AI API Costs</h3>
+                    <ul>
+                        <li><strong>Use smaller models:</strong> GPT-3.5 vs GPT-4 for routine tasks</li>
+                        <li><strong>Cache responses:</strong> Enable OpenClaw's built-in caching</li>
+                        <li><strong>Shorter prompts:</strong> Be concise to reduce token usage</li>
+                        <li><strong>Local models for development:</strong> Test with free local models first</li>
+                    </ul>
+
+                    <h3>Memory Management</h3>
+                    <div class="code-block">
+# Check OpenClaw memory usage
+openclaw status --memory
+
+# Clear conversation history to free RAM
+openclaw clear --conversations --older-than 7d
+
+# Optimize for low-memory systems
+openclaw config set performance.mode minimal
+openclaw config set cache.size 100MB
+                    </div>
+
+                    <h3>Network Optimization</h3>
+                    <ul>
+                        <li><strong>CDN usage:</strong> Enable OpenClaw's CDN for faster asset loading</li>
+                        <li><strong>Compression:</strong> Enable gzip for API responses</li>
+                        <li><strong>Concurrent limits:</strong> Don't overwhelm slow connections</li>
+                    </ul>
+                </section>
+
+                <section id="troubleshooting">
+                    <h2>Common Issues & Solutions</h2>
+
+                    <h3>Installation Problems</h3>
+                    <div class="callout">
+                        <p><strong>Permission denied during install</strong></p>
+                        <p>Solution: Run installer with appropriate permissions:<br>
+                        <code>sudo curl -sSL https://install.openclaw.ai | sh</code></p>
+                    </div>
+
+                    <div class="callout">
+                        <p><strong>Python version conflicts</strong></p>
+                        <p>Solution: OpenClaw requires Python 3.8+. Install via pyenv:<br>
+                        <code>pyenv install 3.11 && pyenv global 3.11</code></p>
+                    </div>
+
+                    <h3>Runtime Issues</h3>
+                    <div class="callout">
+                        <p><strong>Slow response times</strong></p>
+                        <p>Check: Internet connection, AI API status, available RAM<br>
+                        Debug: <code>openclaw debug --performance</code></p>
+                    </div>
+
+                    <div class="callout">
+                        <p><strong>API rate limiting</strong></p>
+                        <p>Solution: Reduce request frequency or upgrade AI provider plan<br>
+                        Config: <code>openclaw config set ai.rate_limit 10</code></p>
+                    </div>
+
+                    <h3>Hardware-Specific Issues</h3>
+                    <div class="callout">
+                        <p><strong>Raspberry Pi audio problems</strong></p>
+                        <p>Solution: Configure ALSA audio properly<br>
+                        <code>sudo apt install pulseaudio pulseaudio-utils</code></p>
+                    </div>
+
+                    <div class="callout">
+                        <p><strong>GPU not detected for local models</strong></p>
+                        <p>Check: NVIDIA drivers, CUDA installation, GPU memory<br>
+                        Test: <code>nvidia-smi</code> should show your GPU</p>
+                    </div>
+
+                    <h3>Getting Help</h3>
+                    <ul>
+                        <li><strong>System diagnostics:</strong> <code>openclaw doctor</code> — comprehensive health check</li>
+                        <li><strong>Log files:</strong> <code>~/.openclaw/logs/</code> — check for error messages</li>
+                        <li><strong>Community support:</strong> <a href="https://openclaw.ai/discord" target="_blank">OpenClaw Discord</a></li>
+                        <li><strong>Bug reports:</strong> <a href="https://github.com/openclaw/openclaw/issues" target="_blank">GitHub Issues</a></li>
+                    </ul>
+                </section>
+
+                <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-top: 48px; text-align: center;">
+                    <h3 style="margin-bottom: 16px;">Ready to Install?</h3>
+                    <p style="margin-bottom: 24px; color: var(--text-muted);">Start with Module 1 and get your first AI agent running in 30 minutes.</p>
+                    <a href="/modules/meet-your-agent" class="btn btn-primary btn-lg" style="margin-right: 16px;">Start Module 1 →</a>
+                    <a href="https://openclaw.ai/download" class="btn btn-secondary btn-lg" target="_blank">Download OpenClaw</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <span class="logo">🦞 Clawlege</span>
+                <p>Learn to build AI agents. Free. Open source. For everyone.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Clawlege/clawlege" target="_blank">GitHub</a>
+                    <a href="https://openclaw.ai" target="_blank">OpenClaw</a>
+                    <a href="https://openclaw.ai/discord" target="_blank">Community</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <a href="/about">About</a>
+                    <a href="/#modules">Curriculum</a>
+                    <a href="/#templates">Templates</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                </nav>
+                <p class="footer-credit">Built with ♥ for the OpenClaw community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
