@@ -259,10 +259,40 @@
     <main>
         <div class="container">
             <div class="content">
+                <div style="background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-alt) 100%); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 32px;">
+                    <h3 style="margin-bottom: 16px; color: var(--text); text-align: center;">🚀 Popular Learning Paths</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 8px;">🎓</div>
+                            <h4 style="margin-bottom: 8px; color: var(--text);">Students</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Free with .edu email</p>
+                            <a href="#education-resources" style="font-size: 0.8rem; color: var(--orange);">GitHub Student Pack →</a>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 8px;">💻</div>
+                            <h4 style="margin-bottom: 8px; color: var(--text);">Quick Start</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Browser-only learning</p>
+                            <a href="#virtual-environments" style="font-size: 0.8rem; color: var(--orange);">Try Colab →</a>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 8px;">🏠</div>
+                            <h4 style="margin-bottom: 8px; color: var(--text);">Local Setup</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Privacy-first approach</p>
+                            <a href="#local-models" style="font-size: 0.8rem; color: var(--orange);">Install Guide →</a>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 8px;">🔧</div>
+                            <h4 style="margin-bottom: 8px; color: var(--text);">Hardware Projects</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Raspberry Pi & IoT</p>
+                            <a href="#hardware-projects" style="font-size: 0.8rem; color: var(--orange);">Build Something →</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="nav-sections">
-                    <h3>Quick Navigation</h3>
+                    <h3>Complete Guide Navigation</h3>
                     <ul>
-                        <li><a href="#quick-start">Quick Start</a></li>
+                        <li><a href="#quick-start">Setup Wizard</a></li>
                         <li><a href="#education-resources">Free Student Resources</a></li>
                         <li><a href="#minimum-requirements">Minimum Requirements</a></li>
                         <li><a href="#virtual-environments">Virtual Development</a></li>
@@ -275,10 +305,125 @@
                 </div>
 
                 <section id="quick-start">
-                    <h2>Quick Start</h2>
+                    <h2>Find Your Perfect Setup</h2>
                     <div class="callout success">
-                        <p><strong>Just want to get started?</strong> Any computer from the last 5 years with 4GB RAM can run OpenClaw with cloud AI models (ChatGPT, Claude). Installation takes 5 minutes.</p>
+                        <p><strong>Not sure which option is right for you?</strong> Answer a few quick questions below to get a personalized recommendation.</p>
                     </div>
+
+                    <div style="background: var(--bg-alt); border-radius: var(--radius); padding: 24px; margin: 24px 0;">
+                        <h3 style="margin-bottom: 20px; color: var(--text);">Setup Wizard</h3>
+                        
+                        <div style="margin-bottom: 24px;">
+                            <h4 style="color: var(--orange); margin-bottom: 12px;">👤 What describes you best?</h4>
+                            <div style="display: grid; gap: 12px;">
+                                <div style="padding: 12px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer;" onclick="showRecommendation('student')">
+                                    <strong>🎓 Student:</strong> Learning AI/programming, have .edu email, limited budget
+                                </div>
+                                <div style="padding: 12px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer;" onclick="showRecommendation('hobbyist')">
+                                    <strong>🏠 Hobbyist/Self-learner:</strong> Personal projects, evenings/weekends, own hardware
+                                </div>
+                                <div style="padding: 12px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer;" onclick="showRecommendation('professional')">
+                                    <strong>💼 Professional:</strong> Work projects, need reliability, budget for tools
+                                </div>
+                                <div style="padding: 12px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer;" onclick="showRecommendation('educator')">
+                                    <strong>👩‍🏫 Educator:</strong> Teaching others, need classroom setup, institutional resources
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="recommendation" style="display: none; background: var(--bg-card); border: 2px solid var(--orange); border-radius: var(--radius); padding: 20px; margin-top: 20px;">
+                            <div id="recommendation-content"></div>
+                        </div>
+                    </div>
+
+                    <script>
+                    function showRecommendation(type) {
+                        const recommendations = {
+                            student: {
+                                title: "🎓 Perfect Student Setup",
+                                setup: "GitHub Codespaces + Student Pack",
+                                cost: "FREE (with .edu email)",
+                                steps: [
+                                    "Apply for GitHub Student Pack at education.github.com",
+                                    "Get 180 hours/month free Codespaces (normally $432/month)",
+                                    "Use Google Colab for GPU experiments",
+                                    "Start with Module 1 in your browser"
+                                ],
+                                benefits: ["No installation needed", "Works on any device", "Professional tools", "Portfolio on GitHub"],
+                                nextStep: "Get Student Pack →",
+                                link: "https://education.github.com/pack"
+                            },
+                            hobbyist: {
+                                title: "🏠 Ideal Hobbyist Setup", 
+                                setup: "Local Installation + Cloud Backup",
+                                cost: "$5-20/month (AI API costs)",
+                                steps: [
+                                    "Install OpenClaw locally on your computer",
+                                    "Start with free Ollama local models",
+                                    "Add cloud APIs (OpenAI/Claude) for better performance", 
+                                    "Use your own hardware for privacy"
+                                ],
+                                benefits: ["Complete privacy", "No ongoing costs", "Learn hardware setup", "Works offline"],
+                                nextStep: "Download OpenClaw →",
+                                link: "https://openclaw.ai/download"
+                            },
+                            professional: {
+                                title: "💼 Professional Setup",
+                                setup: "Cloud Deployment + Premium APIs", 
+                                cost: "$50-200/month",
+                                steps: [
+                                    "Deploy to DigitalOcean/AWS with Docker",
+                                    "Use premium AI APIs for reliability",
+                                    "Set up monitoring and backups",
+                                    "Configure custom domains and SSL"
+                                ],
+                                benefits: ["24/7 availability", "Enterprise reliability", "Team collaboration", "Professional support"],
+                                nextStep: "View Cloud Guide →", 
+                                link: "#cloud-deployment"
+                            },
+                            educator: {
+                                title: "👩‍🏫 Classroom Setup",
+                                setup: "Mixed: Free + Institutional Resources",
+                                cost: "$0-500/month (depending on class size)",
+                                steps: [
+                                    "Apply for education partnerships (NVIDIA, AWS)",
+                                    "Set up shared cloud resources for students",
+                                    "Configure classroom management tools",
+                                    "Use Clawnagers curriculum for structured learning"
+                                ],
+                                benefits: ["Scalable to class size", "Student management", "Free tier options", "Curriculum included"],
+                                nextStep: "Visit Clawnagers →",
+                                link: "https://clawnagers.com/setup-guide"
+                            }
+                        };
+
+                        const rec = recommendations[type];
+                        const content = `
+                            <h4 style="color: var(--orange); margin-bottom: 16px;">${rec.title}</h4>
+                            <div style="display: grid; md:grid-template-columns: 2fr 1fr; gap: 20px; margin-bottom: 20px;">
+                                <div>
+                                    <p style="margin-bottom: 12px;"><strong>Recommended:</strong> ${rec.setup}</p>
+                                    <p style="margin-bottom: 16px;"><strong>Cost:</strong> ${rec.cost}</p>
+                                    <h5 style="margin-bottom: 8px;">Setup Steps:</h5>
+                                    <ol style="margin: 0; padding-left: 20px;">
+                                        ${rec.steps.map(step => `<li style="margin-bottom: 4px;">${step}</li>`).join('')}
+                                    </ol>
+                                </div>
+                                <div>
+                                    <h5 style="margin-bottom: 8px;">Benefits:</h5>
+                                    <ul style="margin: 0; padding-left: 20px; list-style: none;">
+                                        ${rec.benefits.map(benefit => `<li style="margin-bottom: 4px; color: var(--text-muted);">✓ ${benefit}</li>`).join('')}
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="${rec.link}" class="btn btn-primary" ${rec.link.startsWith('http') ? 'target="_blank"' : ''}>${rec.nextStep}</a>
+                        `;
+                        
+                        document.getElementById('recommendation-content').innerHTML = content;
+                        document.getElementById('recommendation').style.display = 'block';
+                        document.getElementById('recommendation').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                    </script>
 
                     <h3>Free Options for Students & Educators</h3>
                     <div class="comparison-grid">
@@ -311,14 +456,61 @@
                         </div>
                     </div>
 
-                    <h3>Essential Requirements</h3>
-                    <ul>
-                        <li><strong>Operating System:</strong> Windows 10+, macOS 10.15+, or Linux (Ubuntu 18.04+)</li>
-                        <li><strong>Memory:</strong> 4GB RAM minimum</li>
-                        <li><strong>Storage:</strong> 2GB free space</li>
-                        <li><strong>Network:</strong> Stable internet connection</li>
-                        <li><strong>AI Access:</strong> API key for OpenAI, Anthropic, or local model</li>
-                    </ul>
+                    <h3>Quick Comparison: Choose Your Path</h3>
+                    <div style="overflow-x: auto; margin: 20px 0;">
+                        <table class="spec-table">
+                            <thead>
+                                <tr>
+                                    <th>Setup Type</th>
+                                    <th>Best For</th>
+                                    <th>Cost</th>
+                                    <th>Setup Time</th>
+                                    <th>Hardware Needed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: rgba(34, 197, 94, 0.1);">
+                                    <td><strong>🎓 Student (Free)</strong></td>
+                                    <td>Learning, experimenting, portfolio</td>
+                                    <td>$0</td>
+                                    <td>5 minutes</td>
+                                    <td>Any device with browser</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>💻 Cloud/Virtual</strong></td>
+                                    <td>Quick start, no installation</td>
+                                    <td>$0-50/month</td>
+                                    <td>2 minutes</td>
+                                    <td>Any device with browser</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🏠 Local Install</strong></td>
+                                    <td>Privacy, customization, learning</td>
+                                    <td>$5-20/month</td>
+                                    <td>15 minutes</td>
+                                    <td>4GB+ RAM, 2GB storage</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🔧 Hardware Projects</strong></td>
+                                    <td>Building physical agents, IoT</td>
+                                    <td>$50-500</td>
+                                    <td>2-4 hours</td>
+                                    <td>Raspberry Pi or similar</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>☁️ Professional</strong></td>
+                                    <td>Production, teams, 24/7 agents</td>
+                                    <td>$50-200/month</td>
+                                    <td>1-2 hours</td>
+                                    <td>Cloud infrastructure</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="callout">
+                        <p><strong>👆 Use the Setup Wizard above</strong> for personalized recommendations based on your specific situation and goals.</p>
+                    </div>
                 </section>
 
                 <section id="minimum-requirements">
