@@ -263,8 +263,9 @@
                     <h3>Quick Navigation</h3>
                     <ul>
                         <li><a href="#quick-start">Quick Start</a></li>
+                        <li><a href="#education-resources">Free Student Resources</a></li>
                         <li><a href="#minimum-requirements">Minimum Requirements</a></li>
-                        <li><a href="#recommended-specs">Recommended Specs</a></li>
+                        <li><a href="#virtual-environments">Virtual Development</a></li>
                         <li><a href="#cloud-deployment">Cloud Deployment</a></li>
                         <li><a href="#local-models">Local AI Models</a></li>
                         <li><a href="#hardware-projects">Hardware Projects</a></li>
@@ -277,6 +278,37 @@
                     <h2>Quick Start</h2>
                     <div class="callout success">
                         <p><strong>Just want to get started?</strong> Any computer from the last 5 years with 4GB RAM can run OpenClaw with cloud AI models (ChatGPT, Claude). Installation takes 5 minutes.</p>
+                    </div>
+
+                    <h3>Free Options for Students & Educators</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <h4>🎓 GitHub Education</h4>
+                            <ul>
+                                <li><strong>Codespaces:</strong> 120 hours/month free</li>
+                                <li><strong>Copilot:</strong> Free AI coding assistant</li>
+                                <li><strong>Pro features:</strong> Private repos, actions</li>
+                                <li><strong>Apply:</strong> education.github.com</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card">
+                            <h4>☁️ Google Colab</h4>
+                            <ul>
+                                <li><strong>Free tier:</strong> 12 hours/day GPU access</li>
+                                <li><strong>Pro:</strong> $9.99/month for students</li>
+                                <li><strong>Hardware:</strong> T4/V100 GPUs included</li>
+                                <li><strong>Perfect for:</strong> Learning and experimentation</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card recommended">
+                            <h4>🖥️ Local Installation</h4>
+                            <ul>
+                                <li><strong>Cost:</strong> Free (uses your hardware)</li>
+                                <li><strong>Privacy:</strong> All data stays local</li>
+                                <li><strong>Performance:</strong> Depends on your machine</li>
+                                <li><strong>Best for:</strong> Regular learners</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <h3>Essential Requirements</h3>
@@ -381,9 +413,75 @@
                     </div>
                 </section>
 
+                <section id="education-resources">
+                    <h2>Free Resources for Students & Educators</h2>
+                    <p>Learning OpenClaw doesn't have to cost anything. Here are the best free and discounted options for students, teachers, and self-learners.</p>
+
+                    <h3>GitHub Student Developer Pack</h3>
+                    <p>The best deal for students — free access to professional development tools:</p>
+                    <ul>
+                        <li><strong>GitHub Codespaces:</strong> 180 core hours/month (normally $432/month)</li>
+                        <li><strong>GitHub Copilot:</strong> AI coding assistant (normally $10/month)</li>
+                        <li><strong>DigitalOcean:</strong> $200 cloud credits</li>
+                        <li><strong>Heroku:</strong> Free dyno hours for app hosting</li>
+                        <li><strong>MongoDB Atlas:</strong> Free database hosting</li>
+                    </ul>
+                    <div class="code-block">
+# Apply with your .edu email
+https://education.github.com/pack
+
+# Instant approval for most domains
+# High school students: upload student ID
+                    </div>
+
+                    <h3>Cloud GPU Access for Learning</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <h3>Google Colab</h3>
+                            <ul>
+                                <li>Free: 12 hours/day T4 GPU</li>
+                                <li>Pro: $9.99/month unlimited</li>
+                                <li>Perfect for: Modules 1-6</li>
+                            </ul>
+                            <div class="price">Free - $10/month</div>
+                        </div>
+                        <div class="comparison-card">
+                            <h3>Kaggle Kernels</h3>
+                            <ul>
+                                <li>Free: 30 hours/week GPU</li>
+                                <li>Hardware: P100, T4 GPUs</li>
+                                <li>Perfect for: AI model training</li>
+                            </ul>
+                            <div class="price">Always Free</div>
+                        </div>
+                        <div class="comparison-card">
+                            <h3>AWS Educate</h3>
+                            <ul>
+                                <li>Credits: $100-200/year</li>
+                                <li>Hardware: EC2 GPU instances</li>
+                                <li>Perfect for: Production projects</li>
+                            </ul>
+                            <div class="price">Free Credits</div>
+                        </div>
+                    </div>
+
+                    <h3>Local AI Models (Privacy-First)</h3>
+                    <p>For learners who want to keep everything private and local:</p>
+                    <ul>
+                        <li><strong>Ollama:</strong> Easiest setup, runs Llama 3, Code Llama, and other models</li>
+                        <li><strong>LM Studio:</strong> User-friendly GUI, model marketplace</li>
+                        <li><strong>GPT4All:</strong> CPU-only models, works on any laptop</li>
+                        <li><strong>Jan AI:</strong> ChatGPT-like interface for local models</li>
+                    </ul>
+
+                    <div class="callout">
+                        <p><strong>Student tip:</strong> Start with free cloud options (Colab, Kaggle) for learning, then move to local models once you understand the basics. This gives you the best of both worlds — fast learning and complete privacy.</p>
+                    </div>
+                </section>
+
                 <section id="cloud-deployment">
                     <h2>Cloud Deployment Options</h2>
-                    <p>Running OpenClaw in the cloud gives you 24/7 agent availability and better performance for multiple users.</p>
+                    <p>Running OpenClaw in the cloud gives you 24/7 agent availability and better performance for sharing your agents with others.</p>
 
                     <h3>Popular Cloud Providers</h3>
                     
@@ -417,6 +515,10 @@ openclaw setup --cloud --domain yourdomain.com
 
                     <div class="callout">
                         <p><strong>Free tier tip:</strong> Most cloud providers offer $200-300 in free credits. You can run a development OpenClaw instance for 3-6 months completely free.</p>
+                    </div>
+
+                    <div class="callout success">
+                        <p><strong>Student discounts:</strong> With a .edu email, you can get massive discounts: GitHub Student Pack (free Pro), AWS Educate ($200 credits), DigitalOcean ($200 credits), Azure for Students ($100 credits). Total value: ~$1000+ in free cloud computing.</p>
                     </div>
 
                     <h3>Docker Deployment</h3>
@@ -500,46 +602,105 @@ openclaw config set ai.model llama3
                     </div>
                 </section>
 
+                <section id="virtual-environments">
+                    <h2>Virtual Development Environments</h2>
+                    <p>Can't install OpenClaw locally? These browser-based environments let you learn and build agents from anywhere.</p>
+
+                    <h3>Browser-Based IDEs</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <h3>GitHub Codespaces</h3>
+                            <ul>
+                                <li>Full VS Code in browser</li>
+                                <li>60 hours/month free</li>
+                                <li>4-core, 8GB RAM machines</li>
+                                <li>Perfect for: Complete development</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card recommended">
+                            <h3>Replit</h3>
+                            <ul>
+                                <li>Collaborative coding</li>
+                                <li>AI pair programming</li>
+                                <li>Instant deployment</li>
+                                <li>Perfect for: Learning with friends</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card">
+                            <h3>GitPod</h3>
+                            <ul>
+                                <li>50 hours/month free</li>
+                                <li>Pre-configured environments</li>
+                                <li>VS Code or Theia IDE</li>
+                                <li>Perfect for: Quick prototypes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Specialized Platforms</h3>
+                    <ul>
+                        <li><strong>Google Colab:</strong> Jupyter notebooks with GPU access — great for AI model experimentation</li>
+                        <li><strong>Kaggle Kernels:</strong> Free GPU compute, massive datasets, community sharing</li>
+                        <li><strong>Observable:</strong> Interactive notebooks for data visualization and agent dashboards</li>
+                        <li><strong>RunKit:</strong> Node.js playground perfect for testing OpenClaw integrations</li>
+                    </ul>
+
+                    <div class="callout">
+                        <p><strong>Chromebook users:</strong> Virtual environments are your best option! GitHub Codespaces gives you a full development environment that runs entirely in your browser.</p>
+                    </div>
+                </section>
+
                 <section id="hardware-projects">
                     <h2>Hardware Integration Projects</h2>
-                    <p>OpenClaw can run on various hardware platforms for physical AI agent projects.</p>
+                    <p>Once you've mastered the basics, take your agents into the physical world with these educational hardware projects.</p>
 
-                    <h3>Raspberry Pi Setup</h3>
-                    <p><strong>Recommended:</strong> Raspberry Pi 4B with 8GB RAM</p>
+                    <h3>Beginner: Raspberry Pi Voice Assistant</h3>
+                    <p><strong>Cost:</strong> ~$100 | <strong>Skill Level:</strong> Beginner | <strong>Time:</strong> Weekend project</p>
                     <ul>
-                        <li><strong>OS:</strong> Raspberry Pi OS 64-bit</li>
-                        <li><strong>Storage:</strong> 64GB+ microSD (Class 10)</li>
-                        <li><strong>Accessories:</strong> USB microphone, speaker, camera (optional)</li>
-                        <li><strong>Performance:</strong> Good for voice assistants with cloud AI</li>
+                        <li><strong>Hardware:</strong> Raspberry Pi 4B (4GB), USB microphone, speaker, SD card</li>
+                        <li><strong>What you'll build:</strong> Wake-word activated AI assistant</li>
+                        <li><strong>Skills learned:</strong> Hardware interfacing, voice processing, always-on agents</li>
+                        <li><strong>Perfect for:</strong> Module 7 (Hardware Week) projects</li>
                     </ul>
 
                     <div class="code-block">
-# Raspberry Pi installation
-sudo apt update && sudo apt upgrade -y
+# Quick Raspberry Pi setup
 curl -sSL https://install.openclaw.ai/pi | sh
-
-# Enable camera and audio
-sudo raspi-config
-# Interface Options > Camera > Enable
-# Interface Options > SSH > Enable
+sudo apt install pulseaudio-utils espeak-ng
+openclaw config set voice.input microphone
+openclaw config set voice.output speaker
                     </div>
 
-                    <h3>NVIDIA Jetson Series</h3>
-                    <p>For edge AI with local model capability:</p>
+                    <h3>Intermediate: Smart Home Agent</h3>
+                    <p><strong>Cost:</strong> ~$200 | <strong>Skill Level:</strong> Intermediate | <strong>Time:</strong> Week-long project</p>
                     <ul>
-                        <li><strong>Jetson Orin Nano:</strong> $499, 8GB RAM, GPU for small models</li>
-                        <li><strong>Jetson AGX Orin:</strong> $1999, 64GB RAM, runs 13B models locally</li>
-                        <li><strong>Use cases:</strong> Autonomous robots, smart security, industrial IoT</li>
+                        <li><strong>Hardware:</strong> Raspberry Pi, smart plugs, temperature sensors, cameras</li>
+                        <li><strong>What you'll build:</strong> AI agent that controls your room/home</li>
+                        <li><strong>Skills learned:</strong> IoT protocols, sensor integration, automation</li>
+                        <li><strong>Perfect for:</strong> Science fair projects, Module 8-9 capstone</li>
                     </ul>
 
-                    <h3>Mobile Deployment</h3>
-                    <p>OpenClaw can run on smartphones and tablets:</p>
+                    <h3>Advanced: Mobile Agent Companion</h3>
+                    <p><strong>Cost:</strong> $0 (use your phone) | <strong>Skill Level:</strong> Advanced | <strong>Time:</strong> Month-long project</p>
                     <ul>
-                        <li><strong>Android:</strong> Termux app + OpenClaw mobile build</li>
-                        <li><strong>iOS:</strong> iSH Shell app (limited functionality)</li>
-                        <li><strong>Requirements:</strong> 4GB+ RAM, stable internet</li>
-                        <li><strong>Battery:</strong> Expect 4-6 hours with continuous use</li>
+                        <li><strong>Platform:</strong> Android (Termux) or iOS (iSH Shell)</li>
+                        <li><strong>What you'll build:</strong> AI agent that lives in your pocket</li>
+                        <li><strong>Skills learned:</strong> Mobile development, battery optimization, edge AI</li>
+                        <li><strong>Perfect for:</strong> Competition projects, portfolio pieces</li>
                     </ul>
+
+                    <h3>Expert: Edge AI with NVIDIA Jetson</h3>
+                    <p><strong>Cost:</strong> $500-2000 | <strong>Skill Level:</strong> Expert | <strong>Time:</strong> Semester project</p>
+                    <ul>
+                        <li><strong>Hardware:</strong> Jetson Orin Nano or AGX Orin</li>
+                        <li><strong>What you'll build:</strong> AI agent with local model processing</li>
+                        <li><strong>Skills learned:</strong> GPU programming, model optimization, production deployment</li>
+                        <li><strong>Perfect for:</strong> University capstone projects, startup prototypes</li>
+                    </ul>
+
+                    <div class="callout">
+                        <p><strong>Education discount:</strong> NVIDIA offers educational discounts on Jetson hardware through their Academic Program. Check with your school's engineering department.</p>
+                    </div>
                 </section>
 
                 <section id="performance-tips">
@@ -634,10 +795,16 @@ openclaw config set cache.size 100MB
                 </section>
 
                 <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-top: 48px; text-align: center;">
-                    <h3 style="margin-bottom: 16px;">Ready to Install?</h3>
-                    <p style="margin-bottom: 24px; color: var(--text-muted);">Start with Module 1 and get your first AI agent running in 30 minutes.</p>
-                    <a href="/modules/meet-your-agent" class="btn btn-primary btn-lg" style="margin-right: 16px;">Start Module 1 →</a>
-                    <a href="https://openclaw.ai/download" class="btn btn-secondary btn-lg" target="_blank">Download OpenClaw</a>
+                    <h3 style="margin-bottom: 16px;">Ready to Start Building?</h3>
+                    <p style="margin-bottom: 24px; color: var(--text-muted);">Whether you're a student, educator, or self-learner — start with our free resources and build your first AI agent in 30 minutes.</p>
+                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                        <a href="/modules/meet-your-agent" class="btn btn-primary btn-lg">Start Module 1 →</a>
+                        <a href="https://education.github.com/pack" class="btn btn-secondary btn-lg" target="_blank">Get Student Pack</a>
+                        <a href="https://colab.research.google.com" class="btn btn-secondary btn-lg" target="_blank">Try Google Colab</a>
+                    </div>
+                    <p style="margin-top: 16px; font-size: 0.9rem; color: var(--text-dim);">
+                        🎓 Students: Get $1000+ in free cloud credits | 💻 Everyone else: Local installation is free
+                    </p>
                 </div>
             </div>
         </div>
