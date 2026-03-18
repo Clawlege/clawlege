@@ -9,6 +9,7 @@
     <meta name="author" content="Clawlege">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://clawlege.com/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information">
     <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM Extended Information">
@@ -21,10 +22,17 @@
     <meta property="og:site_name" content="Clawlege">
     <meta property="og:locale" content="en_US">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:image" content="https://clawlege.com/social-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Clawlege — Learn to Build AI Agents for Free">
     <meta name="twitter:description" content="Free, open source course teaching anyone to build AI agents. 9 modules, 5 starter templates. No coding required.">
+    <meta name="twitter:image" content="https://clawlege.com/social-card.png">>
 
     <!-- Structured Data: Course -->
     <script type="application/ld+json">
@@ -125,26 +133,29 @@
 </head>
 <body>
     <!-- Nav -->
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="#" class="logo">🦞 Clawlege</a>
-            <div class="nav-links">
-                <a href="#modules">Modules</a>
-                <a href="#templates">Templates</a>
-                <a href="#audience">Who It's For</a>
-                <a href="#faq">FAQ</a>
-                <a href="https://github.com/Clawlege/clawlege" class="btn btn-sm" target="_blank">Start Learning →</a>
+    <header>
+        <nav class="nav">
+            <div class="nav-inner">
+                <a href="#" class="logo" aria-label="Clawlege Home">🦞 Clawlege</a>
+                <div class="nav-links">
+                    <a href="#modules" aria-label="View Curriculum">Modules</a>
+                    <a href="#templates" aria-label="View Starter Templates">Templates</a>
+                    <a href="#audience" aria-label="Learn Who This Is For">Who It's For</a>
+                    <a href="#faq" aria-label="Frequently Asked Questions">FAQ</a>
+                    <a href="https://github.com/Clawlege/clawlege" class="btn btn-sm" target="_blank" aria-label="Start Learning on GitHub">Start Learning →</a>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
             </div>
-            <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero -->
-    <section class="hero">
+    <main>
+        <!-- Hero -->
+        <section class="hero">
         <div class="container">
             <h1>Learn to build your own <span class="accent">AI agent.</span></h1>
             <p class="hero-sub">Free. Open source. No coding required to start.</p>
-            <p class="hero-desc">Go from "what's an AI agent?" to building one that remembers you, searches the web, and runs on your phone. 8 modules. 5 starter templates. Zero gatekeeping.</p>
+            <p class="hero-desc">Go from "what's an AI agent?" to building one that remembers you, searches the web, and runs on your phone. 9 modules. 5 starter templates. Zero gatekeeping.</p>
             <div class="hero-cta">
                 <a href="https://github.com/Clawlege/clawlege" class="btn btn-primary" target="_blank">Start Learning →</a>
                 <a href="#modules" class="btn btn-secondary">See the Curriculum</a>
@@ -315,9 +326,10 @@
         <div class="container">
             <h2>Ready to build your agent?</h2>
             <p class="section-sub">It takes 30 minutes and zero coding knowledge. Seriously.</p>
-            <a href="https://github.com/Clawlege/clawlege" class="btn btn-primary btn-lg" target="_blank">Start Learning →</a>
+            <a href="https://github.com/Clawlege/clawlege" class="btn btn-primary btn-lg" target="_blank" aria-label="Start Learning on GitHub">Start Learning →</a>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -325,11 +337,22 @@
             <div class="footer-left">
                 <span class="logo">🦞 Clawlege</span>
                 <p>Learn to build AI agents. Free. Open source. For everyone.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Clawlege/clawlege" target="_blank" aria-label="GitHub Repository">GitHub</a>
+                    <a href="https://openclaw.ai" target="_blank" aria-label="OpenClaw Framework">OpenClaw</a>
+                    <a href="https://openclaw.ai/discord" target="_blank" aria-label="OpenClaw Community Discord">Community</a>
+                </div>
             </div>
             <div class="footer-right">
-                <a href="https://github.com/Clawlege/clawlege" target="_blank">GitHub</a>
-                <a href="https://openclaw.ai" target="_blank">OpenClaw</a>
-                Built with &hearts; for the OpenClaw community
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <a href="/about" aria-label="About Clawlege">About</a>
+                    <a href="#modules" aria-label="View Curriculum">Curriculum</a>
+                    <a href="#templates" aria-label="Starter Templates">Templates</a>
+                    <a href="/blog" aria-label="Learn About AI Agents">Blog</a>
+                    <a href="/privacy" aria-label="Privacy Policy">Privacy</a>
+                    <a href="/terms" aria-label="Terms of Service">Terms</a>
+                </nav>
+                <p class="footer-credit">Built with &hearts; for the OpenClaw community</p>
             </div>
         </div>
     </footer>

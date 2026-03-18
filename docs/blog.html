@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Blog — Clawlege</title>
+    <meta name="description" content="Learn about AI agents, OpenClaw framework, and the future of personal AI assistants. Tutorials, guides, and insights from the Clawlege community.">
+    <meta name="keywords" content="AI agents blog, OpenClaw tutorials, AI agent development, personal AI assistant, artificial intelligence guides">
+    <link rel="canonical" href="https://clawlege.com/blog">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clawlege.com/blog">
+    <meta property="og:title" content="AI Agent Blog — Clawlege">
+    <meta property="og:description" content="Learn about AI agents, OpenClaw framework, and building personal AI assistants. Free tutorials and guides.">
+    <meta property="og:image" content="https://clawlege.com/social-card.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Agent Blog — Clawlege">
+    <meta name="twitter:description" content="Learn about AI agents, OpenClaw framework, and building personal AI assistants.">
+    <meta name="twitter:image" content="https://clawlege.com/social-card.png">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+        .blog-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--text-dim);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: var(--bg-alt);
+        }
+        .blog-content {
+            padding: 24px;
+        }
+        .blog-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+        .blog-card p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+        .blog-meta {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            display: flex;
+            gap: 16px;
+        }
+        .coming-soon {
+            text-align: center;
+            padding: 80px 20px;
+            background: var(--bg-card);
+            border: 2px dashed var(--border);
+            border-radius: var(--radius);
+            margin: 40px 0;
+        }
+        .coming-soon h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        .coming-soon p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-inner">
+                <a href="/" class="logo" aria-label="Clawlege Home">🦞 Clawlege</a>
+                <div class="nav-links">
+                    <a href="/#modules" aria-label="View Curriculum">Modules</a>
+                    <a href="/#templates" aria-label="View Starter Templates">Templates</a>
+                    <a href="/about" aria-label="About Clawlege">About</a>
+                    <a href="/blog" aria-label="AI Agent Blog">Blog</a>
+                    <a href="https://github.com/Clawlege/clawlege" class="btn btn-sm" target="_blank">Start Learning →</a>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>AI Agent <span class="accent">Blog</span></h1>
+                <p class="hero-sub">Tutorials, insights, and the future of personal AI assistants.</p>
+                <p class="hero-desc">Dive deeper into AI agent development, OpenClaw framework updates, and real-world applications.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="blog-grid">
+                    <!-- Featured Articles -->
+                    <article class="blog-card">
+                        <div style="height: 200px; background: linear-gradient(135deg, #FF6B35 0%, #FF8B5E 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🤖</div>
+                        <div class="blog-content">
+                            <h3><a href="/blog/what-is-an-ai-agent" style="color: inherit;">What Is an AI Agent?</a></h3>
+                            <p>A beginner-friendly introduction to AI agents, how they work, and why they're the future of personal computing. No technical jargon, just clear explanations.</p>
+                            <div class="blog-meta">
+                                <span>📖 5 min read</span>
+                                <span>🏷️ Beginner</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div style="height: 200px; background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🦞</div>
+                        <div class="blog-content">
+                            <h3><a href="/blog/openClaw-vs-other-frameworks" style="color: inherit;">OpenClaw vs. Other AI Frameworks</a></h3>
+                            <p>How does OpenClaw compare to LangChain, AutoGPT, and CrewAI? We break down the differences and help you choose the right tool.</p>
+                            <div class="blog-meta">
+                                <span>📖 8 min read</span>
+                                <span>🏷️ Comparison</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div style="height: 200px; background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">💡</div>
+                        <div class="blog-content">
+                            <h3><a href="/blog/5-ai-agent-ideas-for-beginners" style="color: inherit;">5 AI Agent Ideas for Beginners</a></h3>
+                            <p>Stuck for inspiration? Here are five practical AI agent projects you can build as a beginner, from homework helpers to weather buddies.</p>
+                            <div class="blog-meta">
+                                <span>📖 6 min read</span>
+                                <span>🏷️ Ideas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div style="height: 200px; background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🔒</div>
+                        <div class="blog-content">
+                            <h3><a href="/blog/ai-agent-security-best-practices" style="color: inherit;">AI Agent Security: Best Practices</a></h3>
+                            <p>Building safe AI agents is crucial. Learn about prompt injection, API key management, and permission systems before you ship to production.</p>
+                            <div class="blog-meta">
+                                <span>📖 12 min read</span>
+                                <span>🏷️ Security</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div style="height: 200px; background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">📱</div>
+                        <div class="blog-content">
+                            <h3><a href="/blog/running-agents-on-mobile-devices" style="color: inherit;">Running AI Agents on Mobile Devices</a></h3>
+                            <p>Take your AI agent from desktop to mobile. Learn about resource constraints, battery optimization, and mobile-first agent design.</p>
+                            <div class="blog-meta">
+                                <span>📖 10 min read</span>
+                                <span>🏷️ Mobile</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div style="height: 200px; background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🚀</div>
+                        <div class="blog-content">
+                            <h3><a href="/blog/from-prototype-to-production" style="color: inherit;">From Prototype to Production</a></h3>
+                            <p>You've built an agent that works on your laptop. Now what? Learn about deployment, monitoring, and scaling your AI agent for real users.</p>
+                            <div class="blog-meta">
+                                <span>📖 15 min read</span>
+                                <span>🏷️ Advanced</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="coming-soon">
+                    <h3>Coming Soon</h3>
+                    <p>We're working on these articles and more. Want to contribute? <a href="https://github.com/Clawlege/clawlege" target="_blank">Join us on GitHub</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p class="section-sub">New tutorials and insights about AI agent development, delivered weekly.</p>
+                <div style="text-align: center; margin-top: 32px;">
+                    <p style="color: var(--text-muted); margin-bottom: 24px;">Follow our <a href="https://github.com/Clawlege/clawlege" target="_blank">GitHub repository</a> or join the <a href="https://openclaw.ai/discord" target="_blank">OpenClaw Discord</a> for updates.</p>
+                    <a href="https://github.com/Clawlege/clawlege" class="btn btn-primary" target="_blank">Follow on GitHub →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <span class="logo">🦞 Clawlege</span>
+                <p>Learn to build AI agents. Free. Open source. For everyone.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Clawlege/clawlege" target="_blank">GitHub</a>
+                    <a href="https://openclaw.ai" target="_blank">OpenClaw</a>
+                    <a href="https://openclaw.ai/discord" target="_blank">Community</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <a href="/about">About</a>
+                    <a href="/#modules">Curriculum</a>
+                    <a href="/#templates">Templates</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                </nav>
+                <p class="footer-credit">Built with ♥ for the OpenClaw community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>

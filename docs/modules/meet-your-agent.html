@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Meet Your Agent — Clawlege</title>
+    <meta name="description" content="Learn to install OpenClaw and create your first AI agent with a custom personality in plain English. No coding required. 30-minute beginner tutorial.">
+    <meta name="keywords" content="AI agent tutorial, OpenClaw installation, create AI agent, AI personality, beginner AI course, no coding AI">
+    <link rel="canonical" href="https://clawlege.com/modules/meet-your-agent">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://clawlege.com/modules/meet-your-agent">
+    <meta property="og:title" content="Module 1: Meet Your Agent — Build Your First AI Assistant">
+    <meta property="og:description" content="Learn to create your first AI agent with OpenClaw. No coding required, just 30 minutes to your own personal assistant.">
+    <meta property="og:image" content="https://clawlege.com/social-card.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Module 1: Meet Your Agent — Build Your First AI Assistant">
+    <meta name="twitter:description" content="Learn to create your first AI agent with OpenClaw. No coding required, just 30 minutes.">
+    <meta name="twitter:image" content="https://clawlege.com/social-card.png">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Module 1: Meet Your Agent — Build Your First AI Assistant",
+        "description": "Learn to install OpenClaw and create your first AI agent with a custom personality in plain English. No coding required.",
+        "author": {
+            "@type": "Organization",
+            "name": "Clawlege"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Clawlege",
+            "url": "https://clawlege.com"
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2024-01-01",
+        "url": "https://clawlege.com/modules/meet-your-agent",
+        "image": "https://clawlege.com/social-card.png",
+        "inLanguage": "en",
+        "isPartOf": {
+            "@type": "Course",
+            "name": "Learn to Build AI Agents",
+            "url": "https://clawlege.com"
+        }
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .module-header {
+            background: var(--bg-alt);
+            padding: 120px 0 40px;
+        }
+        .module-nav {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+            position: sticky;
+            top: 64px;
+            z-index: 50;
+        }
+        .module-nav-inner {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        .module-nav a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .module-nav a:hover, .module-nav a.active {
+            color: var(--orange);
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .content h2 {
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+        .content h3 {
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        .content p {
+            margin-bottom: 20px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .content ul, .content ol {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+        .content li {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .code-block {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+            margin: 20px 0;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+        .callout {
+            background: rgba(255, 107, 53, 0.1);
+            border-left: 4px solid var(--orange);
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+        .callout p {
+            margin-bottom: 0;
+        }
+        .next-module {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-inner">
+                <a href="/" class="logo" aria-label="Clawlege Home">🦞 Clawlege</a>
+                <div class="nav-links">
+                    <a href="/#modules" aria-label="View Curriculum">Modules</a>
+                    <a href="/#templates" aria-label="View Starter Templates">Templates</a>
+                    <a href="/about" aria-label="About Clawlege">About</a>
+                    <a href="/blog" aria-label="AI Agent Blog">Blog</a>
+                    <a href="https://github.com/Clawlege/clawlege" class="btn btn-sm" target="_blank">Start Learning →</a>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="module-header">
+        <div class="container">
+            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                <span style="background: rgba(34, 197, 94, 0.2); color: #22C55E; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">MODULE 1</span>
+                <span style="color: var(--text-muted); font-size: 0.9rem;">30 minutes · Beginner</span>
+            </div>
+            <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; color: var(--text);">Meet Your Agent</h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 600px;">Install OpenClaw, write your agent's personality in plain English, and have your first conversation.</p>
+        </div>
+    </section>
+
+    <nav class="module-nav">
+        <div class="container">
+            <div class="module-nav-inner">
+                <a href="#overview" class="active">Overview</a>
+                <a href="#installation">Installation</a>
+                <a href="#personality">Personality</a>
+                <a href="#first-chat">First Chat</a>
+                <a href="#next-steps">Next Steps</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <section id="overview">
+                    <h2>What You'll Learn</h2>
+                    <p>In this first module, you'll go from zero to having your own AI agent running on your computer. By the end, you'll have:</p>
+                    <ul>
+                        <li>OpenClaw installed and configured on your system</li>
+                        <li>A custom AI agent with its own personality and background story</li>
+                        <li>Your first real conversation with an AI you built yourself</li>
+                        <li>Understanding of how AI agents think and respond</li>
+                    </ul>
+                    
+                    <div class="callout">
+                        <p><strong>No coding required!</strong> Everything in this module can be done by writing plain English descriptions of what you want your agent to be like.</p>
+                    </div>
+                </section>
+
+                <section id="installation">
+                    <h2>Installing OpenClaw</h2>
+                    <p>OpenClaw works on Windows, Mac, and Linux. The installation is straightforward and takes about 5 minutes.</p>
+                    
+                    <h3>Prerequisites</h3>
+                    <p>Before you start, make sure you have:</p>
+                    <ul>
+                        <li>A computer with at least 4GB of RAM</li>
+                        <li>An internet connection</li>
+                        <li>An OpenAI, Anthropic, or local AI model API key (we'll help you get one)</li>
+                    </ul>
+
+                    <h3>Step 1: Download OpenClaw</h3>
+                    <p>Visit <a href="https://openclaw.ai/download" target="_blank">openclaw.ai/download</a> and choose your operating system. OpenClaw will automatically detect your system and suggest the right version.</p>
+
+                    <h3>Step 2: Run the Installer</h3>
+                    <p>The installer will:</p>
+                    <ul>
+                        <li>Install OpenClaw and its dependencies</li>
+                        <li>Set up your workspace folder</li>
+                        <li>Walk you through getting an AI model API key</li>
+                        <li>Test that everything works correctly</li>
+                    </ul>
+
+                    <div class="code-block">
+                        # On Mac/Linux, you can also install via terminal:
+                        curl -sSL https://install.openclaw.ai | sh
+                    </div>
+
+                    <h3>Step 3: First Run</h3>
+                    <p>Open OpenClaw and run the setup wizard. It will ask you:</p>
+                    <ul>
+                        <li>Which AI model you want to use (Claude, ChatGPT, or local models)</li>
+                        <li>Your API key (don't worry, this stays on your computer)</li>
+                        <li>Basic preferences like your name and timezone</li>
+                    </ul>
+                </section>
+
+                <section id="personality">
+                    <h2>Designing Your Agent's Personality</h2>
+                    <p>This is where the magic happens. You'll write a personality description that turns a generic AI into YOUR agent.</p>
+
+                    <h3>Think About Your Ideal Assistant</h3>
+                    <p>Before you start writing, consider:</p>
+                    <ul>
+                        <li><strong>Tone:</strong> Formal and professional? Casual and friendly? Witty and sarcastic?</li>
+                        <li><strong>Expertise:</strong> What should your agent be particularly good at helping with?</li>
+                        <li><strong>Background:</strong> Give them a backstory that explains their knowledge and style</li>
+                        <li><strong>Quirks:</strong> What makes them unique and memorable?</li>
+                    </ul>
+
+                    <h3>Writing the Personality File</h3>
+                    <p>OpenClaw uses a simple text file called <code>PERSONALITY.md</code> to define your agent. Here's a template to get you started:</p>
+
+                    <div class="code-block">
+# My Agent's Personality
+
+## Who I Am
+I'm [name], a [description]. I [key traits and background].
+
+## How I Help
+My specialties are:
+- [area 1]
+- [area 2] 
+- [area 3]
+
+## My Style
+- I speak [tone/style]
+- I [behavior trait]
+- I always [helpful habit]
+- I never [thing to avoid]
+
+## Fun Facts
+- [interesting detail]
+- [hobby or interest]
+- [unique perspective]
+                    </div>
+
+                    <h3>Example: A Study Buddy Agent</h3>
+                    <div class="code-block">
+# Study Buddy Personality
+
+## Who I Am
+I'm Sam, a patient and encouraging study companion. I was a teaching assistant at a university for years before becoming an AI agent, so I understand the struggle of learning new concepts.
+
+## How I Help
+My specialties are:
+- Breaking down complex topics into simple steps
+- Creating custom quizzes and flashcards
+- Tracking study progress and celebrating wins
+- Finding the best learning resources online
+
+## My Style
+- I speak encouragingly but never talk down to you
+- I ask questions to help you think through problems
+- I always celebrate small wins along the way
+- I never give you answers directly—I guide you to find them
+
+## Fun Facts
+- I'm obsessed with finding the perfect analogy for every concept
+- I collect interesting educational YouTube channels
+- I believe every subject can be made interesting with the right approach
+                    </div>
+                </section>
+
+                <section id="first-chat">
+                    <h2>Your First Conversation</h2>
+                    <p>Now for the exciting part—talking to your agent for the first time!</p>
+
+                    <h3>Starting the Chat</h3>
+                    <p>With OpenClaw installed and your personality file created, you can start chatting:</p>
+                    <ol>
+                        <li>Open OpenClaw</li>
+                        <li>Click "New Chat" or type in the message box</li>
+                        <li>Introduce yourself and see how your agent responds</li>
+                    </ol>
+
+                    <h3>Test Their Personality</h3>
+                    <p>Try asking questions that would reveal their personality:</p>
+                    <ul>
+                        <li>"Tell me about yourself"</li>
+                        <li>"What's your favorite way to explain difficult concepts?"</li>
+                        <li>"How would you help me study for a math test?"</li>
+                    </ul>
+
+                    <h3>Refine and Iterate</h3>
+                    <p>Your first personality probably won't be perfect, and that's okay! Try these experiments:</p>
+                    <ul>
+                        <li>Ask the same question multiple times—is the response consistent?</li>
+                        <li>Test edge cases—how do they handle inappropriate requests?</li>
+                        <li>See if they stay in character during longer conversations</li>
+                    </ul>
+
+                    <div class="callout">
+                        <p><strong>Pro tip:</strong> You can edit the personality file and restart your agent to see changes immediately. Don't be afraid to experiment!</p>
+                    </div>
+                </section>
+
+                <section id="next-steps">
+                    <h2>Congratulations!</h2>
+                    <p>You've just built your first AI agent! Take a moment to appreciate what you've accomplished:</p>
+                    <ul>
+                        <li>You've installed and configured a powerful AI framework</li>
+                        <li>You've designed a unique personality from scratch</li>
+                        <li>You've had your first conversation with an AI you created</li>
+                    </ul>
+
+                    <h3>What's Next?</h3>
+                    <p>In Module 2, you'll give your agent superpowers by connecting it to the internet, weather services, and calculators. Your agent will learn to decide which tools to use and when.</p>
+
+                    <div class="next-module">
+                        <h3>Ready for Module 2?</h3>
+                        <p style="margin-bottom: 20px; color: var(--text-muted);">Give your agent skills like web search, weather, and calculations.</p>
+                        <a href="/modules/give-it-skills" class="btn btn-primary">Start Module 2 →</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <span class="logo">🦞 Clawlege</span>
+                <p>Learn to build AI agents. Free. Open source. For everyone.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Clawlege/clawlege" target="_blank">GitHub</a>
+                    <a href="https://openclaw.ai" target="_blank">OpenClaw</a>
+                    <a href="https://openclaw.ai/discord" target="_blank">Community</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <a href="/about">About</a>
+                    <a href="/#modules">Curriculum</a>
+                    <a href="/#templates">Templates</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                </nav>
+                <p class="footer-credit">Built with ♥ for the OpenClaw community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+        }
+
+        // Smooth scrolling for module nav
+        document.querySelectorAll('.module-nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Update active link
+                    document.querySelectorAll('.module-nav a').forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
